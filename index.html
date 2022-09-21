@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="gb-en">
+
+<head>
+    <title>Score Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Score</h1>
+    <div id="scores">
+        <h2 id="team1CountH2">0</h2>
+        <h2>-</h2>
+        <h2 id="team2CountH2">0</h2>
+    </div>
+    <div id="score-buttons">
+        <button class="increment-btn" id="team1IncrementBtn" onclick="team1Increment()">AA's team</button>
+        <button class="increment-btn" id="team2IncrementBtn" onclick="team2Increment()">Opposing team</button>
+    </div>
+    <button id="save-btn" onclick="save()">SAVE</button><br>
+    <button id="reset-btn" onclick="reset()">Reset above scores to 0 (without saving)</button><br>
+    <button id="delete-btn" onclick="del()">Delete previous scores</button>
+    <div id="prev-scores-container">
+        <p id="prev-scores-title">Previous scores: </p>
+        <p id="prev-scores">
+    </div>
+    </p>
+    <script src="index.js">
+
+    </script>
+</body>
+
+</html>
